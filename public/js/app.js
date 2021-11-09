@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', ($event) => {
                 messageOne.textContent = data.error;
             } else {
                 messageOne.textContent = data.location;
-                messageTwo.textContent = `Weather is ${data.forecast.description} and Temperature is ${data.forecast.temperature}`;
+                messageTwo.textContent = `Weather is ${data.forecast.description} and Temperature is ${data.forecast.temperature} but it feels like ${data.forecast.feelsLikeTemperature}`;
             }
         })
     });
